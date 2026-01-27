@@ -1,5 +1,5 @@
 {
-  "name": "soybean-admin",
+  "name": "dandelion",
   "type": "module",
   "version": "2.0.2",
   "description": "A fresh and elegant admin template, based on Vue3、Vite7、TypeScript、NaiveUI and UnoCSS. 一个基于Vue3、Vite7、TypeScript、NaiveUI and UnoCSS的清新优雅的中后台模版。",
@@ -75,6 +75,7 @@
     "@sa/scripts": "workspace:*",
     "@sa/uno-preset": "workspace:*",
     "@soybeanjs/eslint-config": "1.7.5",
+    "@tauri-apps/cli": "^2.9.6",
     "@types/node": "25.0.9",
     "@types/nprogress": "0.2.3",
     "@unocss/eslint-config": "66.6.0",

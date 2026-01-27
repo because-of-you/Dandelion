@@ -35,7 +35,11 @@ export default defineConfig(configEnv => {
       host: '0.0.0.0',
       port: 9527,
       open: true,
-      proxy: createViteProxy(viteEnv, enableProxy)
+      proxy: createViteProxy(viteEnv, enableProxy),
+      watch: {
+        // 告诉 Vite 忽略监听 `src-tauri` 目录
+        ignored: ['**/src-tauri/**']
+      }
     },
     preview: {
       port: 9725

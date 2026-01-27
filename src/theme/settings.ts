@@ -3,14 +3,14 @@ export const themeSettings: App.Theme.ThemeSetting = {
   themeScheme: 'light',
   grayscale: false,
   colourWeakness: false,
-  recommendColor: false,
-  themeColor: '#646cff',
+  recommendColor: true,
+  themeColor: '#78a878',
   themeRadius: 6,
   otherColor: {
-    info: '#2080f0',
-    success: '#52c41a',
-    warning: '#faad14',
-    error: '#f5222d'
+    info: '#89b989',
+    success: '#99c299',
+    warning: '#d4bb9d',
+    error: '#c49a9a'
   },
   isInfoFollowPrimary: true,
   layout: {
