@@ -1,5 +1,6 @@
 <script setup lang="ts">
-import { computed } from 'vue';
+import { computed, ref } from 'vue';
+import { invoke } from '@tauri-apps/api/core';
 import { useAppStore } from '@/store/modules/app';
 import HeaderBanner from './modules/header-banner.vue';
 import CardData from './modules/card-data.vue';
@@ -10,11 +11,22 @@ import CreativityBanner from './modules/creativity-banner.vue';
 
 const appStore = useAppStore();
 
+// 定义响应式数据
+const data = ref<string>('');
+
+// 调用命令并绑定到 data
+invoke<string>('my_custom_command').then(command => {
+  data.value = command;
+});
+
 const gap = computed(() => (appStore.isMobile ? 0 : 16));
 </script>
 
 <template>
   <NSpace vertical :size="16">
+    <NAlert title="sss" type="info">
+      {{ data }}
+    </NAlert>
     <NAlert :title="$t('common.tip')" type="warning">
       {{ $t('page.home.branchDesc') }}
     </NAlert>

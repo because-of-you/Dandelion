@@ -38,7 +38,7 @@ export default defineConfig(configEnv => {
       proxy: createViteProxy(viteEnv, enableProxy),
       watch: {
         // 告诉 Vite 忽略监听 `src-tauri` 目录
-        ignored: ['**/src-tauri/**']
+        // ignored: ['src-tauri']
       }
     },
     preview: {
