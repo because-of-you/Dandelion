@@ -1,5 +1,5 @@
 use log::info;
-use tauri::Manager;
+use tauri::{Manager, TitleBarStyle};
 use tauri_plugin_log::{Target, TargetKind};
 
 #[tauri::command]
@@ -22,7 +22,8 @@ pub fn run() {
                         .build(),
                 )?;
                 let window = app.get_webview_window("main").unwrap();
-                window.open_devtools()
+                window.open_devtools();
+                window.set_title_bar_style(TitleBarStyle::Transparent).unwrap();
             }
             Ok(())
         })

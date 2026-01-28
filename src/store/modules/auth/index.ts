@@ -46,6 +46,7 @@ export const useAuthStore = defineStore(SetupStoreId.Auth, () => {
 
     authStore.$reset();
 
+    // console.log(route.meta);
     if (!route.meta.constant) {
       await toLogin();
     }

@@ -19,3 +19,4 @@ tauri = { version = "2.9.5", features = [] }
 tauri-plugin-log = "2"
 mcp.workspace = true
 tokio = { version = "1", features = ["rt-multi-thread", "macros"] }
+cocoa = "0.26.1"
