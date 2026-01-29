@@ -48,6 +48,9 @@ const local: App.I18n.Schema = {
     yesOrNo: {
       yes: 'Yes',
       no: 'No'
+    },
+    footer: {
+      message: 'Because of you, the world learned to breathe.'
     }
   },
   request: {
@@ -229,7 +232,8 @@ const local: App.I18n.Schema = {
     404: 'Page Not Found',
     500: 'Server Error',
     'iframe-page': 'Iframe',
-    home: 'Home'
+    home: 'Home',
+    control: 'ControlPanel'
   },
   page: {
     login: {

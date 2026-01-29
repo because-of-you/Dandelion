@@ -360,6 +360,9 @@ declare namespace App {
           yes: string;
           no: string;
         };
+        footer: {
+          message: string;
+        };
       };
       request: {
         logout: string;
@@ -599,13 +602,21 @@ declare namespace App {
 
     interface $T {
       (key: I18nKey): string;
+
       (key: I18nKey, plural: number, options?: TranslateOptions<LangType>): string;
+
       (key: I18nKey, defaultMsg: string, options?: TranslateOptions<I18nKey>): string;
+
       (key: I18nKey, list: unknown[], options?: TranslateOptions<I18nKey>): string;
+
       (key: I18nKey, list: unknown[], plural: number): string;
+
       (key: I18nKey, list: unknown[], defaultMsg: string): string;
+
       (key: I18nKey, named: Record<string, unknown>, options?: TranslateOptions<LangType>): string;
+
       (key: I18nKey, named: Record<string, unknown>, plural: number): string;
+
       (key: I18nKey, named: Record<string, unknown>, defaultMsg: string): string;
     }
   }

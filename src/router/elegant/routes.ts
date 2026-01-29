@@ -40,6 +40,16 @@ export const generatedRoutes: GeneratedRoute[] = [
     }
   },
   {
+    name: 'control',
+    path: '/control',
+    component: 'layout.base$view.control',
+    meta: {
+      title: 'control',
+      i18nKey: 'route.control',
+      icon: 'icon-park-outline:application'
+    }
+  },
+  {
     name: 'home',
     path: '/home',
     component: 'layout.base$view.home',

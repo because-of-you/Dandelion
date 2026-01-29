@@ -48,6 +48,9 @@ const local: App.I18n.Schema = {
     yesOrNo: {
       yes: '是',
       no: '否'
+    },
+    footer: {
+      message: '因为你，世界有了风。'
     }
   },
   request: {
@@ -225,7 +228,8 @@ const local: App.I18n.Schema = {
     404: '页面不存在',
     500: '服务器错误',
     'iframe-page': '外链页面',
-    home: '首页'
+    home: '首页',
+    control: '控制台'
   },
   page: {
     login: {
